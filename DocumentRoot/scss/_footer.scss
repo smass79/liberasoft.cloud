@@ -1,0 +1,256 @@
+
+/***
+
+==================================================================
+	Main Footer
+==================================================================
+
+***/
+
+.main-footer{
+	background-color: #0F0C1D;
+	position: relative;
+	.bg-image{
+		@include overlay;
+		@include background;
+		&:before{
+			@include overlay;
+			background-color: var(--bg-theme-color1);
+			opacity: .0;
+			content: "";
+		}
+	}
+}
+
+/* Widget Section */
+.main-footer {
+	.widgets-section{
+		position: relative;
+		padding:110px 0 65px;
+		@include media-breakpoint-down(lg){
+			padding: 87px 0 35px;
+		}
+	}
+	.footer-column {
+		position: relative;
+		margin-bottom: 40px;
+	}
+	.footer-widget {
+		position: relative;
+	}
+
+	.widget-title {
+		position: relative;
+		font-size: 20px;
+		font-weight: 700;
+		color: #ffffff;
+		line-height: 1.2em;
+		padding-bottom: 18px;
+		margin-bottom: 25px;
+		&:after{
+			position: absolute;
+			left: 0%;
+			bottom: 0;
+			height: 2px;
+			width: 25px;
+			background-color: var(--bg-theme-color2);
+			content: "";
+		}
+		&:before {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 2px;
+			width: 100%;
+			content: "";
+			background-color: rgba(255,255,255,.10);
+		}
+	}
+}
+
+
+.main-footer .about-widget{
+	position: relative;
+	.logo {
+		position: relative;
+		margin-bottom: 22px;
+	}
+	.text{
+		font-size:16px;
+		line-height: 30px;
+		color: #8c8f94;
+		margin-bottom: 20px;
+	}
+}
+
+/*=== User LInks ===*/
+
+.user-links {
+	position: relative;
+	li {
+		position: relative;
+		font-size: 16px;
+		line-height: 24px;
+		color: #8c8f94;
+		font-weight: 400;
+		margin-bottom: 14px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		a {
+			position: relative;
+			display: inline-block;
+			color: inherit;
+			transition: all 300ms ease;
+			&:hover {
+				color: #FFFFFF;
+			}
+			&:before {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 0;
+				height: 1px;
+				background-color: var(--bg-theme-color3);
+				content: "";
+				transition: all 300ms ease;
+			}
+			&:hover:before {
+				width: 100%;
+			}
+		}
+	}
+}
+
+/* Contact Widget */
+.contact-widget{
+	position: relative;
+	.text{
+		font-size: 16px;
+		line-height: 30px;
+		color: #8c8f94;
+		margin-bottom: 25px;
+	}
+	.contact-info {
+		position: relative;
+
+		li {
+			position: relative;
+			padding-left: 38px;
+			font-size: 16px;
+			line-height: 26px;
+			color: #ffffff;
+			font-weight: 700;
+			margin-bottom: 5px;
+			transition: all 300ms ease;
+			a{
+				color: inherit;
+				transition: none;
+			}
+			i {
+				position: absolute;
+				left: 0;
+				top: 0;
+				color: var(--theme-color2);
+				line-height: 26px;
+				width: 20px;
+				font-size: 16px;
+				text-align: center;
+				transition: all 300ms ease;
+			}
+			&:hover{
+				color: var(--theme-color2);
+			}
+		}
+	}
+}
+
+
+/* Gallery Widget */
+
+.gallery-widget {
+	position: relative;
+	.outer {
+		position: relative;
+		margin: 0px -7px ;
+		.image {
+			position: relative;
+			float: left;
+			width: 33.3333%;
+			padding: 0px 7px;
+			margin-bottom: 14px;
+		}
+	}
+	.image {
+		img {
+			display: block;
+			width: 100%;
+		}
+		a {
+			position: relative;
+			display: block;
+			overflow: hidden;
+			&:before {
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				background: var(--theme-color2) padding-box content-box;
+				opacity: 0.8;
+				content: "";
+				transform: scale(0);
+				transition: all 300ms ease;
+			}
+			&:hover {
+				&:before {
+					transform: scale(1);
+				}
+				&:after {
+					transform: scale(1);
+				}
+			}
+			&:after {
+				position: absolute;
+				height: 20px;
+				width: 20px;
+				left: 50%;
+				top: 50%;
+				margin-left: -10px;
+				margin-top: -10px;
+				content: "\f0c1";
+				text-align: center;
+				line-height: 20px;
+				font-size: 18px;
+				color: var(--text-color-bg-theme-color2);
+				font-weight: 900;
+				font-family: "Font Awesome 5 Free";
+				transform: scale(0);
+				transition: all 300ms ease;
+			}
+		}
+	}
+}
+
+
+/*=== Footer Bottom ===*/
+.footer-bottom {
+	position: relative;
+	width: 100%;
+	.inner-container {
+		position: relative;
+		text-align: center;
+		background-color: #07151D;
+		padding: 35px 15px;
+	}
+	.copyright-text {
+		position: relative;
+		color: #8c8f94;
+		a {
+			color: inherit;
+			&:hover {
+				color: #ffffff;
+			}
+		}
+	}
+}

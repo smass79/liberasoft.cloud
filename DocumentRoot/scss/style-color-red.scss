@@ -1,0 +1,159 @@
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+//Define theme colors
+$theme-color1: #222429;
+$theme-color2: #ff3838;
+$theme-color3: #f4f5f8;
+
+// text color over theme color bg
+$text-color-over-bg-theme-color1: #fff;
+$text-color-over-bg-theme-color2: #fff;
+$text-color-over-bg-theme-color3: #fff;
+
+:root {
+
+  //theme colors RGB
+  --theme-color1-rgb: #{hexToRGB($theme-color1)};
+  --theme-color2-rgb: #{hexToRGB($theme-color2)};
+  --theme-color3-rgb: #{hexToRGB($theme-color3)};
+
+  //theme color
+  --theme-color1: #{$theme-color1};
+  --theme-color2: #{$theme-color2};
+  --theme-color3: #{$theme-color3};
+  
+  --text-color-bg-theme-color1: #{$text-color-over-bg-theme-color1};
+  --text-color-bg-theme-color2: #{$text-color-over-bg-theme-color2};
+  --text-color-bg-theme-color3: #{$text-color-over-bg-theme-color3};
+}
+
+// reset scss
+.icon-quote {
+  background-image: url(../images/icons/icon-quote-red.png);
+}
+
+// banner scss
+.banner-section{
+  &:before {
+    background-image: url(../images/main-slider/shape-1-red.png);
+  }
+}
+.banner-section-two {
+  &:before {
+    background-image: url(../images/main-slider/s3-shape-1-red.png);
+  }
+}
+.banner-section-five{
+  &:before {
+    background-image: url(../images/main-slider/s2-shape-3-red.png);
+  }
+}
+
+// about scss
+.about-section .image-column {
+  .inner-column {
+    &:before{
+      background-image: url(../images/icons/pattern-25-red.png);
+    }
+  }
+}
+.about-section-three {
+  &:before{
+    background-image: url(../images/icons/arrow-top-red.png);
+  }
+  &:after{
+    background-image: url(../images/icons/arrow-bottom-red.png);
+  }
+}
+.about-section-four{
+  &:before {
+    background-image: url(../images/icons/shape-tm-6-red.png);
+  }
+}
+.about-section-seven {
+  .image-column {
+    .image-box {
+      .image {
+        &:before {
+          background-image: url(../images/icons/shape-tm-20-red.png);
+        }
+      }
+    }
+  }
+}
+.about-section-ten {
+  &:before{
+    background-image: url(../images/icons/shape-tm-16-red.png);
+  }
+  &:after{
+    background-image: url(../images/icons/shape-tm-17-red.png);
+  }
+}
+
+// contact scss
+.contact-form {
+  &.light {
+    &:before {
+      background-image: url(../images/icons/shape-tm-7-red.png);
+    }
+  }
+}
+.contact-section-three {
+  &.style-three {
+    &:before {
+      background-image: url(../images/icons/shape-tm-18-red.png);
+    }
+    &:after {
+      background-image: url(../images/icons/shape-tm-19-red.png);
+    }
+  }
+}
+
+// feature scss
+.features-section-two{
+  &:before{
+    background-image: url(../images/icons/bg-shape-tm-1-red.png);
+  }
+}
+.feature-block-two{
+  .inner-box {
+    &:after {
+      background-image: url(../images/icons/shape-tm-1-red.png);
+    }
+  }
+}
+.features-section-seven{
+  &:before{
+    background-image: url(../images/icons/shape-tm-9-red.png);
+  }
+}
+
+// pricing scss
+.pricing-block-two {
+  .inner-box {
+    background-image: url(../images/icons/shape-tm-13-red.png);
+  }
+}
+
+// service scss
+.services-section-six {
+  &:before {
+    background-image: url(../images/icons/bg-shape-tm-2-red.png);
+  }
+}
+
+// team scss
+.team-section {
+  &:before{
+    background-image: url(../images/icons/shape-tm-11-red.png);
+  }
+}
+
+// testimonial scss
+.testimonial-section{
+  &:before{
+    background-image: url(../images/icons/pattern-tm-1-red.png);
+  }
+}

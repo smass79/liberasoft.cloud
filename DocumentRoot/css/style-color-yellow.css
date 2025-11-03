@@ -1,0 +1,92 @@
+:root {
+  --theme-color1-rgb: 34, 36, 41;
+  --theme-color2-rgb: 255, 170, 23;
+  --theme-color3-rgb: 244, 245, 248;
+  --theme-color1: #222429;
+  --theme-color2: #ffaa17;
+  --theme-color3: #f4f5f8;
+  --text-color-bg-theme-color1: #fff;
+  --text-color-bg-theme-color2: #000;
+  --text-color-bg-theme-color3: #fff;
+}
+
+.icon-quote {
+  background-image: url(../images/icons/icon-quote-yellow.png);
+}
+
+.banner-section:before {
+  background-image: url(../images/main-slider/shape-1-yellow.png);
+}
+
+.banner-section-two:before {
+  background-image: url(../images/main-slider/s3-shape-1-yellow.png);
+}
+
+.banner-section-five:before {
+  background-image: url(../images/main-slider/s2-shape-3-yellow.png);
+}
+
+.about-section .image-column .inner-column:before {
+  background-image: url(../images/icons/pattern-25-yellow.png);
+}
+
+.about-section-three:before {
+  background-image: url(../images/icons/arrow-top-yellow.png);
+}
+.about-section-three:after {
+  background-image: url(../images/icons/arrow-bottom-yellow.png);
+}
+
+.about-section-four:before {
+  background-image: url(../images/icons/shape-tm-6-red.png);
+}
+
+.about-section-ten:before {
+  background-image: url(../images/icons/shape-tm-16-yellow.png);
+}
+.about-section-ten:after {
+  background-image: url(../images/icons/shape-tm-17-yellow.png);
+}
+
+.about-section-seven .image-column .image-box .image:before {
+  background-image: url(../images/icons/shape-tm-20-yellow.png);
+}
+
+.contact-form.light:before {
+  background-image: url(../images/icons/shape-tm-7-yellow.png);
+}
+
+.contact-section-three.style-three:before {
+  background-image: url(../images/icons/shape-tm-18-yellow.png);
+}
+.contact-section-three.style-three:after {
+  background-image: url(../images/icons/shape-tm-19-yellow.png);
+}
+
+.features-section-two:before {
+  background-image: url(../images/icons/bg-shape-tm-1-yellow.png);
+}
+
+.feature-block-two .inner-box:after {
+  background-image: url(../images/icons/shape-tm-1-yellow.png);
+}
+
+.features-section-seven:before {
+  background-image: url(../images/icons/shape-tm-9-yellow.png);
+}
+
+.pricing-block-two .inner-box {
+  background-image: url(../images/icons/shape-tm-13-yellow.png);
+}
+
+.services-section-six:before {
+  background-image: url(../images/icons/bg-shape-tm-2-yellow.png);
+}
+
+.team-section:before {
+  background-image: url(../images/icons/shape-tm-11-yellow.png);
+}
+
+.testimonial-section:before {
+  background-image: url(../images/icons/pattern-tm-1-yellow.png);
+}
