@@ -1,0 +1,188 @@
+/*** 
+
+====================================================================
+		FAQ's Sectiom
+====================================================================
+
+***/
+
+.faqs-section {
+    position: relative;
+    .form-bg{
+        position: absolute;
+        right: 15px;
+        left: -375px;
+        top: 0;
+        height: 100%;
+        @include background;
+        &:before{
+            @include overlay;
+            background-color: #222429;
+            opacity: .80;
+            content: "";
+        }
+    }
+    .faq-bg {
+        position: absolute;
+        left: 15px;
+        right: -375px;
+        height: 100%;
+        @include background;
+    }
+
+    &.style-two{
+        &:before{
+            position: absolute;
+            top: -300px;
+            right: -480px;
+            height: 100%;
+            width: 100%;
+            background-image: url(../images/icons/pattern-21.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+            content: "";
+        }
+        .faq-column {
+            .inner-column {
+                padding-top: 120px;
+            }
+        }
+
+        .image-column{
+            position: relative;
+            margin-bottom: 50px;
+            .inner-column{
+                margin-left: -375px;
+                .image{
+                    position: relative;
+                    margin-bottom: 10px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .info-box{
+                position: relative;
+                padding: 45px 45px;
+                background-color: var(--bg-theme-color2);
+                background-image: url(../images/icons/icon-lines-5.png);
+                background-repeat: no-repeat;
+                background-position: left top;
+                &:hover{
+                    .icon{
+                        transform: rotateY(180deg);
+                        background-color: var(--bg-theme-color3);
+                        color: var(--theme-color1);
+                        box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+                    }
+                }
+                .inner{
+                    padding-right: 200px;
+                    position: relative;
+                    min-height: 140px;
+                    text-align: right;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                .title{
+                    margin-bottom: 0;
+                }
+                .icon{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 140px;
+                    width: 140px;
+                    border-radius: 50%;
+                    background-color: var(--bg-theme-color1);
+                    color: var(--theme-color2);
+                    font-size: 78px;
+                    @include flex-center;
+                    transition: all 300ms ease;
+                }
+            }
+        }
+    }
+}
+
+.faqs-section .faq-column {
+    position: relative;
+    .inner-column {
+        position: relative;
+        padding: 70px 70px 60px;
+        padding-right: 0;
+    }
+}
+
+.faqs-section .form-column {
+    position: relative;
+    .inner-column {
+        position: relative;
+        padding: 70px 70px 70px;
+        padding-left: 0;
+    }
+}
+
+
+.accordion-box {
+    position: relative;
+    .block {
+        position: relative;
+        background-color: #ffffff;
+        box-shadow: 0 5px 40px rgba(0, 0, 0, .05);
+        margin-bottom: 10px;
+        .acc-btn {
+            position: relative;
+            font-size: 18px;
+            line-height: 25px;
+            color: var(--theme-color1);
+            font-weight: 700;
+            cursor: pointer;
+            padding: 20px 30px;
+            padding-right: 70px;
+            transition: all 500ms ease;
+            border-bottom: 1px solid var(--border-theme-color3);
+            .icon {
+                position: absolute;
+                right: 30px;
+                top: 20px;
+                height: 35px;
+                font-size: 14px;
+                line-height: 25px;
+                color: var(--theme-color1);
+                transition: all 500ms ease;
+            }
+            &.active {
+                color: var(--theme-color-light);
+                background-color: var(--bg-theme-color2);
+                .icon {
+                    color: var(--theme-color-light);
+            
+                    &:before {
+                        content: "\f068";
+                    }
+                }
+            }
+        }
+        .acc-content {
+            position: relative;
+            display: none;
+            .content {
+                position: relative;
+                padding: 25px 30px;
+                .text {
+                    display: block;
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: #808287;
+                    margin-bottom: 0;
+                }
+            }
+
+            &.current {
+                display: block;
+            }
+        }
+    }
+}

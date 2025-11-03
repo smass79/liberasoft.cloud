@@ -1,0 +1,191 @@
+:root {
+  --dark-color1: #0F0F0F;
+  --dark-color2: #181818;
+  --dark-color3: #2b242b;
+  --text-color: #a3a5aa;
+}
+
+body,
+.page-wrapper,
+.header-style-two .header-lower,
+.feature-block-two .inner-box,
+.about-section,
+.project-section,
+.testimonial-block-five .inner-box,
+.contact-section-three .content-column .call-info-box,
+.about-section-four .content-column .blockquote-style-one,
+.contact-section-two .info-column .inner-column:before,
+.project-section-four,
+.time-table-box .inner,
+.sticky-header.fixed-header {
+  background-color: var(--dark-color1);
+}
+
+.service-block-two .count::after, .service-block-two .count::before {
+  background: -webkit-gradient(linear, left top, right top, from(var(--dark-color1)), to(transparent));
+  background: linear-gradient(to right, var(--dark-color1), transparent);
+}
+
+.header-style-two .header-lower .main-box .logo-box:before,
+.header-style-two .header-lower .main-box .logo-box:after,
+.features-section-two:before,
+.testimonial-block-five .content-box,
+.offer-section-five:before,
+.team-block .info-box,
+.contact-section-three:after,
+.news-block .content-box,
+.project-section-three:before,
+.tabs-three .tab-buttons .tab-btn.active-btn,
+.tabs-three .tabs-content,
+.about-section-four:before,
+.features-section-four .outer-box,
+.team-block-two .inner-box:before,
+.contact-section-three.style-three,
+.services-section-three:after,
+.service-block-three .inner-box:before,
+.pricing-block-two .inner-box {
+  background-color: var(--dark-color2);
+}
+
+.news-block .bottom-box {
+  background-color: var(--dark-color3);
+}
+
+.btn-style-three,
+.about-section-ten .content-bottom .call-info-box-outer,
+.news-section-two {
+  background-color: #000;
+}
+
+.service-block .inner-box {
+  border-color: var(--dark-color1);
+}
+
+.about-section .image-column .image-2,
+.news-block .content-box {
+  border-color: var(--dark-color2);
+}
+
+.clients-section.border-bottom {
+  border-color: var(--dark-color2) !important;
+}
+
+.testimonial-block-five .content-box:before {
+  border-top-color: var(--dark-color2);
+}
+
+.news-block .bottom-box {
+  border-color: var(--dark-color3);
+}
+
+.clients-section.border-top {
+  border-top-color: var(--dark-color3) !important;
+}
+
+.news-carousel .owl-nav .owl-next,
+.news-carousel .owl-nav .owl-prev {
+  border-color: var(--text-color);
+}
+
+body,
+.header-style-two .main-menu .navigation > li > a,
+.header-style-two .ui-btn,
+.header-style-two .header-lower .main-box .outer-box .mobile-nav-toggler,
+.sec-title .text,
+.list-style-two li,
+.testimonial-block-five .content-box .text,
+.service-block-seven .text,
+.offer-section-five .content-column .info-box .title,
+.contact-section-three .content-column .call-info-box span,
+.contact-section-three .expert-info-box .expert-text span,
+.about-section-four .float-text,
+.news-carousel .owl-nav .owl-next,
+.news-carousel .owl-nav .owl-prev,
+.about-section-seven .content-column .info-box-two .title {
+  color: var(--text-color);
+}
+
+.sec-title h2,
+.feature-block-two .title,
+.founder-info .name,
+.testimonial-block-five .name,
+.team-block .info-box .name,
+.contact-section-three .content-column .call-info-box-outer .call-info-box-text span,
+.news-block .content-box .title,
+.feature-block-nine .title,
+.about-block-three .title,
+.skills .skill-item .skill-header .skill-title,
+.testimonial-block .name,
+.offer-section-two .image-column .video-box .title,
+.tabs-three .tab-buttons .tab-btn.active-btn,
+.about-section-nine .info-box .title,
+.about-section-four .content-column .blockquote-style-one,
+.contact-section-two .info-column .info-box .title,
+.about-section-ten .content-column .info-box .title,
+.team-block-two .info-box .name,
+.contact-details-info h3,
+.contact-details-block .text,
+.time-table-box .title,
+.service-block-three .title,
+.pricing-block-two .title,
+.pricing-block-two .price {
+  color: #fff;
+}
+
+.main-menu .navigation > li:hover > a,
+.main-menu .navigation > li.current > a {
+  color: var(--theme-color2);
+}
+
+.founder-info .designation {
+  color: #6A6F78;
+}
+
+.header-style-two {
+  background-color: unset;
+}
+
+.offer-section-five:before,
+.contact-section-three:after,
+.pricing-section-two {
+  background-image: unset;
+}
+
+.bg-pattern-1 {
+  background-image: url(../images/icons/pattern-14.jpg);
+}
+
+.about-section-three .image-column .inner-column:after {
+  background-image: url(../images/icons/icon-dots-3-dark.png);
+}
+
+.about-section-seven:before {
+  background-image: url(../images/icons/bg-shape-tm-3-dark.png);
+}
+
+.contact-form .form-group textarea {
+  background-color: #0a090f;
+}
+.contact-form .form-group input:not([type=submit]) {
+  background-color: #0a090f;
+}
+
+.contact-form-two .form-group .select2-container--default .select2-selection--single,
+.contact-form-two .form-group input:not([type=submit]),
+.contact-form-two .form-group textarea, .contact-form-two .form-group select {
+  background-color: #212529;
+  border-color: var(--dark-color3);
+  color: var(--text-color);
+}
+
+.contact-form-two .form-group input:focus,
+.contact-form-two .form-group select:focus,
+.contact-form-two .form-group textarea:focus {
+  border-color: var(--dark-color1);
+  color: #fff;
+}
+
+.clients-carousel .slide-item img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}

@@ -1,0 +1,305 @@
+
+/*** 
+
+====================================================================
+    Fun Fact Section
+====================================================================
+
+***/
+
+.fun-fact-section{
+    position: relative;
+    padding: 120px 0 90px;
+}
+
+.counter-block {
+    position: relative;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    .inner {
+        position: relative;
+        min-height: 200px;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        padding: 5px 40px 40px;
+        transition: all 300ms ease;
+        background-image: url(../images/icons/pattern-1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0 5px 40px rgba(0,0,0, .05);
+        &:hover{
+            transform: translateY(-5px);
+            .icon{
+                background-color: var(--bg-theme-color1);
+                color: var(--bg-theme-color2);
+                border-radius: 50%;
+            }
+        }
+    }
+    .icon {
+        position: relative;
+        display: block;
+        @include flex-center;
+        height: 115px;
+        width: 115px;
+        margin: -75px auto 0;
+        background-color: #e6e8ed;
+        color: var(--theme-color1);
+        font-size: 62px;
+        font-weight: 600;
+        transition: all 300ms ease;
+        z-index: 1;
+        margin-bottom: 20px;
+    }
+    .count-box {
+        font-size: 46px;
+        color: var(--theme-color1);
+        font-weight: 700;
+        line-height: 1em;
+        text-transform: uppercase;
+        font-family: var(--title-font);
+        margin-bottom: 15px;
+        .count-text {
+            font-size: 46px;
+            color: var(--theme-color1);
+            font-weight: 700;
+            line-height: 1em;
+        }
+    }
+    .counter-title {
+        display: block;
+        padding: 10px 10px;
+        font-size: 12px;
+        line-height: 18px;
+        color: var(--theme-color1);
+        background-color: var(--bg-theme-color2);
+        letter-spacing: .1em;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}
+
+/*** 
+
+====================================================================
+    Fun Fact Section Two
+====================================================================
+
+***/
+
+.fun-fact-section-two{
+    position: relative;
+    &:before{
+        @include absolute;
+        height: 50%;
+        width: 100%;
+        background-color: var(--bg-theme-color2);
+        content: "";
+    }
+    .fact-counter{
+        position: relative;
+        padding: 75px 0 20px;
+        &:before {
+            @include absolute-right;
+            height: 100%;
+            width: 1000%;
+            background-color: #e7e8ea;
+            background-image: url(../images/icons/pattern-9.jpg);
+            background-repeat: repeat;
+            content: "";
+        }
+    }
+}
+
+// Counter Block Two 
+
+.counter-block-two{
+    position: relative;
+    margin-bottom: 50px;
+    .inner {
+        position: relative;
+        padding-left: 80px;
+        min-height: 64px;
+        transition: all 300ms ease;
+        &:hover{
+            .icon{
+                transform:scaleX(-1);
+                color: var(--theme-color2)
+            }
+        }
+    }
+    .icon {
+        @include absolute;
+        color: var(--theme-color1);
+        font-size: 64px;
+        line-height: 1em;
+        transition: all 300ms ease;
+        z-index: 1;
+        margin-bottom: 20px;
+    }
+    .count-box {
+        font-size: 46px;
+        color: var(--theme-color1);
+        font-weight: 700;
+        line-height: 1em;
+        text-transform: uppercase;
+        font-family: var(--title-font);
+        margin-bottom: 5px;
+        .count-text {
+            font-size: 46px;
+            color: var(--theme-color1);
+            font-weight: 700;
+            line-height: 1em;
+        }
+    }
+
+    .counter-title {
+        display: block;
+        font-size: 12px;
+        line-height: 30px;
+        color: #808287;
+        letter-spacing: .1em;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}
+
+// Counter Block Three
+.counter-block-three{
+    position: relative;
+    border-right: 1px solid rgba(255,255,255, .1);
+    &:last-child{
+        border-right: 0;
+    }
+    &:before{
+        position: absolute;
+        left:50%;
+        top: 0;
+        width: 0;
+        height: 4px;
+        background-color: var(--border-theme-color2);
+        transition: all 300ms ease;
+        content: "";
+    }
+    &:hover{
+        &:before{
+            left: 0;
+            width: 100%;
+        }
+    }
+    .inner {
+        position: relative;
+        padding: 120px 0 10px;
+        text-align: center;
+        transition: all 300ms ease;
+    }
+    .count-box {
+        font-size: 46px;
+        color: #fff;
+        font-weight: 700;
+        line-height: 1em;
+        text-transform: uppercase;
+        font-family: var(--title-font);
+        margin-bottom: 15px;
+        .count-text {
+            font-size: 46px;
+            color: #fff;
+            font-weight: 700;
+            line-height: 1em;
+        }
+    }
+    .counter-title {
+        display: block;
+        font-size: 12px;
+        line-height: 30px;
+        color: #fff;
+        letter-spacing: .1em;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}
+
+/*** 
+
+====================================================================
+    Fun Fact Section Three
+====================================================================
+
+***/
+
+.fun-fact-section-three {
+    @include background;
+    position: relative;
+    padding: 37px 0 55px;
+    &.style-two {
+        padding: 25px 0 170px;
+        .counter-block-four {
+          .icon {
+            background-color: #000;
+          }  
+        }
+    }
+}
+
+.counter-block-four {
+    position: relative;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    .inner {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        transition: all 300ms ease;
+        &:hover{
+            transform: translateY(-5px);
+            .icon{
+                color: var(--bg-theme-color2);
+                border-radius: 50%;
+            }
+        }
+    }
+    .icon {
+        position: relative;
+        display: block;
+        @include flex-center;
+        height: 110px;
+        width: 110px;
+        margin: 0 auto;
+        background-color: #111;
+        color: var(--theme-color2);
+        font-size: 62px;
+        font-weight: 600;
+        transition: all 300ms ease;
+        z-index: 1;
+        margin-bottom: 20px;
+    }
+    .count-box {
+        font-size: 48px;
+        color: var(--theme-color1);
+        font-weight: 700;
+        line-height: 1em;
+        text-transform: uppercase;
+        font-family: var(--title-font);
+        margin-bottom: 15px;
+        .count-text {
+            font-size: 48px;
+            color: var(--theme-color-light);
+            font-weight: 700;
+            line-height: 1em;
+        }
+    }
+    .counter-title {
+        display: block;
+        font-size: 12px;
+        line-height: 18px;
+        color: var(--theme-color-light);
+        letter-spacing: .1em;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}
