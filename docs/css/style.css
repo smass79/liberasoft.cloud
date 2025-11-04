@@ -1873,9 +1873,15 @@ Scroll To Top style
   height: auto;
 }
 .main-header .logo img.logo-liberasoft {
-  width: 150px;
-  height: auto;
+  width: 300px;
+  height: 60px;
 }
+
+img.logo-liberasoft-2 {
+  width: 230px;
+  height: 60px;
+}
+
 .main-header .main-box {
   -webkit-box-align: center;
   -ms-flex-align: center;
