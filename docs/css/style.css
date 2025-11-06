@@ -2797,8 +2797,13 @@ img.logo-liberasoft-2 {
     justify-content: flex-end;
   }
 }
+
 .header-style-six .header-lower .main-menu .navigation > li {
-  margin: 0 30px;
+  /* COMENTADO */
+  /* margin: 0 30px; */
+
+  /* MODIFICADO */
+  margin: 0 15px;
 }
 .header-style-six .header-lower .main-menu .navigation > li > a:not(:hover) {
   color: #fff;
@@ -15635,13 +15640,27 @@ Section Title
   position: relative;
 }
 .clients-carousel .slide-item img {
-  display: inline-block;
   max-width: 100%;
   width: auto;
-  height: auto;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+
+  /* COMENTADO */
+  /* height: auto; */
+
+  /* AGREGADO */
+  height: 150px;
+  object-fit: contain;
+  display: inline-block;
 }
+
+/* AGREGADO */
+.listas-integraciones {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
 .clients-carousel .slide-item:hover img {
   opacity: 1;
   -webkit-transform: scale(0.9);
@@ -15695,6 +15714,15 @@ Section Title
 
 .clients-carousel .owl-dots {
   display: none;
+}
+
+/* AGREGADO */
+.imagen-integracion {
+  width: 150px; /* ajustá según el tamaño que quieras */
+  height: 60px; /* mismo alto para todas */
+  object-fit: contain; /* o "cover" si querés que se recorten */
+  display: block;
+  margin: 0 auto; /* centra la imagen en su contenedor */
 }
 
 /***
