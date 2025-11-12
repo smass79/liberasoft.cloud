@@ -1873,8 +1873,8 @@ Scroll To Top style
   height: auto;
 }
 .main-header .logo img.logo-liberasoft {
-  width: 300px;
-  height: 60px;
+  width: 250px;
+  height: 50px;
 }
 
 img.logo-liberasoft-2 {
@@ -18134,12 +18134,23 @@ Page Title
   -webkit-transition: all 600ms ease;
   transition: all 600ms ease;
 }
+/* AGREGADO */
+.services-details__content .feature-list .single-item .text-module {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  line-height: 32px;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
 .services-details__content .feature-list .single-item:hover {
   background-color: var(--theme-color2);
   color: var(--theme-color-light);
 }
+/* MODIFICADO */
 .services-details__content .feature-list .single-item:hover .title,
-.services-details__content .feature-list .single-item:hover .icon-box {
+.services-details__content .feature-list .single-item:hover .icon-box,
+.services-details__content .feature-list .single-item:hover .text-module {
   color: var(--theme-color-light);
 }
 
