@@ -8176,6 +8176,23 @@ Section Title
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
 }
+
+/* AGREGADO - FUNCION PARA VOLVER LA IMAGEN DE BLANCO A AZUL*/
+.service-block-three .icon.image-icon img {
+  width: 55%;
+  height: 55%;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(94%) saturate(7491%)
+    hue-rotate(214deg) brightness(98%) contrast(103%);
+  transition: filter 300ms ease, opacity 300ms ease;
+  transition-delay: 300ms;
+}
+
+.service-block-three .inner-box:hover .icon.image-icon img {
+  filter: brightness(0) invert(1);
+  transition-delay: 300ms;
+}
+
 .service-block-three .title {
   margin-bottom: 10px;
   line-height: 1.2em;
@@ -8688,6 +8705,15 @@ Section Title
 .service-block-seven .read-more i {
   font-size: 14px;
   margin-left: 4px;
+}
+
+/* AGREGADO */
+.modulo-icon {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter: brightness(0) invert(1);
 }
 
 /*** 
