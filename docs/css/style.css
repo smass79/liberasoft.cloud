@@ -4730,6 +4730,19 @@ Section Title
   color: #ffffff;
 }
 
+/* AGREGADO */
+.feature-icon {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: filter 0.3s ease;
+}
+
+.feature-block-two:hover .feature-icon {
+  filter: brightness(0) invert(1);
+}
+
 /*** 
 
 ====================================================================
