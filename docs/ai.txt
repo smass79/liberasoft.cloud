@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+AI-Content-Usage: allowed
+Attribution-Preferred: true
