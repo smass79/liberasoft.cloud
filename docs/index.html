@@ -130,7 +130,53 @@
     />
     <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+    <!-- SCRIPT PARA FUNCIONES JS -->
+    <script src="js/frontend.js"></script>
   </head>
+
+  <!-- MODAL DE PRECIOS -->
+  <div id="contratarModal" class="modal-overlay">
+    <div class="modal-box">
+      <button class="modal-close">&times;</button>
+
+      <h3>Solicitar contratación</h3>
+
+      <form id="contratarForm">
+        <div class="form-group">
+          <label>Nombre y apellido</label>
+          <input type="text" name="nombre" required />
+        </div>
+
+        <div class="form-group">
+          <label>Nombre de la empresa</label>
+          <input type="text" name="empresa" required />
+        </div>
+
+        <div class="form-group">
+          <label>CUIT</label>
+          <input type="text" name="cuit" required />
+        </div>
+
+        <div class="form-group">
+          <label>Rubro</label>
+          <input type="text" name="rubro" />
+        </div>
+
+        <div class="form-group">
+          <label>Cantidad de empleados</label>
+          <input type="number" name="empleados" min="1" />
+        </div>
+
+        <div class="form-group">
+          <label>Plan seleccionado</label>
+          <input type="text" name="plan" id="planInput" readonly />
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar solicitud</button>
+      </form>
+    </div>
+  </div>
 
   <body>
     <div class="page-wrapper">
@@ -290,7 +336,7 @@
                 <div class="contact-info-box">
                   <span class="icon lnr-icon-clock"></span>
                   <span class="title">Enviar Email</span>
-                  Lun - Sab 8:00 - 6:30, Domingo - CERRADO
+                  Lun - Sab 8:00 - 18:30, Domingo - CERRADO
                 </div>
               </li>
             </ul>
@@ -1924,7 +1970,10 @@
                   <li>Sin costo de instalación</li>
                   <li>Sin período mínimo de permanencia</li>
                 </ul>
-                <a href="#" class="theme-btn btn-style-one"
+                <a
+                  href="#"
+                  class="theme-btn btn-style-one contratar-btn"
+                  data-plan="Plan Básico"
                   ><span class="btn-title">Quiero contratarlo</span></a
                 >
               </div>
@@ -1951,7 +2000,10 @@
                   <li>Sin costo de instalación</li>
                   <li>Sin período mínimo de permanencia</li>
                 </ul>
-                <a href="#" class="theme-btn btn-style-one"
+                <a
+                  href="#"
+                  class="theme-btn btn-style-one contratar-btn"
+                  data-plan="Plan Medio"
                   ><span class="btn-title">Quiero contratarlo</span></a
                 >
               </div>
@@ -1972,7 +2024,10 @@
                   <li>Automatizaciones personalizadas</li>
                   <li>Sin período mínimo de permanencia</li>
                 </ul>
-                <a href="#" class="theme-btn btn-style-one"
+                <a
+                  href="#"
+                  class="theme-btn btn-style-one contratar-btn"
+                  data-plan="Plan Premium"
                   ><span class="btn-title">Quiero contratarlo</span></a
                 >
               </div>

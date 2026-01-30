@@ -20,7 +20,19 @@
     />
     <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+    <!-- SCRIPT PARA FUNCIONES JS -->
+    <script src="js/frontend.js"></script>
   </head>
+
+  <!-- MODAL DE SABER MAS DE MODULOS -->
+  <div id="globalModal" class="modal-overlay modal-overlay-text">
+    <div class="modal-box-text">
+      <button class="modal-close">&times;</button>
+      <h3 id="modalTitle">Más información</h3>
+      <div id="modalContent"></div>
+    </div>
+  </div>
 
   <body>
     <div class="page-wrapper">
@@ -758,46 +770,33 @@
                   <span class="sub-title">Recepción</span>
                   <h2>Precisión desde el primer paso</h2>
                   <br />
-                  <p>
+
+                  <!-- TEXTO CORTADO -->
+                  <div
+                    class="text-preview"
+                    data-fulltext="
+La eficiencia logística comienza en la recepción, y LiberaSOFT WMS convierte este proceso en una operación rápida, guiada y sin errores. Con el uso de colectores de datos, el sistema relaciona cada artículo recibido con su orden de compra previamente cargada, garantizando que lo que ingresa al almacén sea exactamente lo que fue solicitado.
+
+El operario simplemente escanea los productos y el WMS valida automáticamente cantidades, códigos, lotes, series y cualquier otra información necesaria. Cada lectura se registra en tiempo real, asegurando total trazabilidad desde el primer segundo.
+
+Una vez confirmada la recepción, la mercadería queda ingresada en el sistema y lista para ser almacenada, habilitando el proceso de ubicación con total precisión. No hay dobles cargas, no hay papeles, no hay errores: solo un flujo digital, inteligente y totalmente controlado.
+
+Con LiberaSOFT WMS, tu almacén recibe mercadería con la misma exactitud con la que la despacha. Una logística más ágil comienza desde el ingreso.
+"
+                  >
                     La eficiencia logística comienza en la recepción, y
-                    <strong>LiberaSOFT WMS</strong> convierte este proceso en
-                    una operación rápida, guiada y sin errores. Con el uso de
-                    <strong>colectores de datos</strong>, el sistema relaciona
-                    cada artículo recibido con su
-                    <strong>orden de compra previamente cargada</strong>,
-                    garantizando que lo que ingresa al almacén sea exactamente
-                    lo que fue solicitado.
-                  </p>
-                  <p>
-                    El operario simplemente escanea los productos y el WMS
-                    valida automáticamente cantidades, códigos, lotes, series y
-                    cualquier otra información necesaria. Cada lectura se
-                    registra en tiempo real, asegurando total trazabilidad desde
-                    el primer segundo.
-                  </p>
-                  <p>
-                    Una vez confirmada la recepción, la mercadería queda
-                    <strong
-                      >ingresada en el sistema y lista para ser
-                      almacenada</strong
-                    >, habilitando el proceso de ubicación con total precisión.
-                    No hay dobles cargas, no hay papeles, no hay errores: solo
-                    un flujo digital, inteligente y totalmente controlado.
-                  </p>
-                  <p>
-                    Con LiberaSOFT WMS, tu almacén recibe mercadería con la
-                    misma exactitud con la que la despacha. Una logística más
-                    ágil comienza desde el ingreso.
-                  </p>
-
-                  <div class="text">
-                    System is a term used to refer to an organized collection
-                    symbols and processes that may be used to operate on such
-                    symbols. Perspiciatis omnis natus error voupems accusa
+                    LiberaSOFT WMS convierte este proceso en una operación
+                    rápida, guiada y sin errores. Con el uso de colectores de
+                    datos, el sistema relaciona cada artículo recibido con su
+                    orden de compra previamente cargada, garantizando que lo que
+                    ingresa al almacén sea exactamente lo que fue solicitado....
                   </div>
-                </div>
 
-                <!--Skills-->
+                  <!-- BOTON -->
+                  <button class="btn-saber-mas theme-btn btn-style-one">
+                    Saber más
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -867,55 +866,39 @@
           <div class="row">
             <div
               class="content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-lg-2 wow fadeInLeft"
-              data-wow-delay="600ms"
             >
               <div class="inner-column">
                 <div class="sec-title">
                   <span class="sub-title">Ubicación</span>
                   <h2>Inteligencia en cada movimiento</h2>
-                </div>
 
-                <p>
-                  Una vez recibida la mercadería, LiberaSOFT WMS guía al
-                  operario en el proceso de ubicación para garantizar que cada
-                  producto quede almacenado en el lugar óptimo. Con el uso de
-                  colectores de datos y validaciones en tiempo real, el sistema
-                  transforma esta tarea en un flujo ágil, controlado y
-                  totalmente libre de errores.
-                </p>
-                <p>
-                  El WMS permite que un mismo producto cuente con
-                  <strong> múltiples sectores de ubicación</strong>, manteniendo
-                  una distribución flexible y eficiente dentro del depósito. Al
-                  momento de ubicar, el sistema analiza automáticamente
-                  variables clave como
-                  <strong
-                    >fechas de vencimiento, número de lote, rotación, stock
-                    existente y disponibilidad física</strong
+                  <div
+                    class="text-preview"
+                    data-fulltext="
+Una vez recibida la mercadería, LiberaSOFT WMS guía al operario en el proceso de ubicación para garantizar que cada producto quede almacenado en el lugar óptimo. Con el uso de colectores de datos y validaciones en tiempo real, el sistema transforma esta tarea en un flujo ágil, controlado y totalmente libre de errores.
+
+El WMS permite que un mismo producto cuente con múltiples sectores de ubicación, manteniendo una distribución flexible y eficiente dentro del depósito. Al momento de ubicar, el sistema analiza automáticamente variables clave como fechas de vencimiento, número de lote, rotación, stock existente y disponibilidad física de cada ubicación.
+
+Con esta información, el sistema sugiere al usuario el sector ideal, priorizando orden, eficiencia y cumplimiento de normas como FIFO, FEFO u otros criterios definidos por la operación. El operario solo debe escanear la ubicación indicada y confirmar la operación, dejando todo registrado al instante.
+
+El resultado: una logística más inteligente, productos correctamente organizados y un inventario siempre confiable. LiberaSOFT WMS convierte la simple acción de ubicar en un proceso estratégico y totalmente optimizado.
+"
                   >
-                  de cada ubicación.
-                </p>
-                <p>
-                  Con esta información,
-                  <strong>el sistema sugiere al usuario el sector ideal</strong
-                  >, priorizando orden, eficiencia y cumplimiento de normas como
-                  FIFO, FEFO u otros criterios definidos por la operación. El
-                  operario solo debe escanear la ubicación indicada y confirmar
-                  la operación, dejando todo registrado al instante.
-                </p>
-                <p>
-                  El resultado: una logística más inteligente, productos
-                  correctamente organizados y un inventario siempre confiable.
-                  <br />
-                  <strong
-                    >LiberaSOFT WMS convierte la simple acción de ubicar en un
-                    proceso estratégico y totalmente optimizado.</strong
-                  >
-                </p>
+                    Una vez recibida la mercadería, LiberaSOFT WMS guía al
+                    operario en el proceso de ubicación para garantizar que cada
+                    producto quede almacenado en el lugar óptimo. Con el uso de
+                    colectores de datos y validaciones en tiempo real, el
+                    sistema transforma esta tarea en un flujo ágil, controlado y
+                    totalmente libre de errores...
+                  </div>
+
+                  <button class="btn-saber-mas theme-btn btn-style-one">
+                    Saber más
+                  </button>
+                </div>
               </div>
             </div>
 
-            <!-- Image Column -->
             <div class="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
               <div class="image-box wow fadeInRight">
                 <figure class="image overlay-anim">
@@ -938,43 +921,30 @@
                 <div class="sec-title">
                   <span class="sub-title">Picking</span>
                   <h2>Preparación de pedidos con máxima eficiencia</h2>
-                  <br />
-                  <p>
+                  <div
+                    class="text-preview"
+                    data-fulltext="En LiberaSOFT WMS, el proceso de picking se convierte en una operación inteligente, guiada y completamente optimizada. 
+Los trabajos son asignados por un encargado y se envían automáticamente a los colectores de datos utilizados por los armadores de pedidos, garantizando un flujo ordenado y sin interrupciones.
+
+Desde el dispositivo móvil, el operario accede a la aplicación de picking, donde el sistema le indica la ruta más eficiente para recorrer el depósito, reduciendo tiempos y mejorando la productividad. Cada paso está pensado para minimizar desplazamientos, evitar congestiones y acelerar la preparación de pedidos.
+
+Además, el WMS selecciona automáticamente el lote más adecuado para extraer la mercadería, basándose en criterios como fecha de vencimiento, orden de ingreso del lote, rotación y otras reglas definidas por la empresa. El operario solo debe escanear, confirmar y continuar: el sistema valida todo en tiempo real, evitando errores y asegurando una trazabilidad perfecta.
+
+El resultado es un proceso de picking rápido, confiable y completamente optimizado, donde cada pedido se prepara de manera consistente y precisa, sin retrabajos ni pérdidas de tiempo.
+
+LiberaSOFT WMS convierte el picking en un flujo inteligente que impulsa la eficiencia logística y mejora la experiencia del cliente final."
+                  >
                     En LiberaSOFT WMS, el proceso de picking se convierte en una
                     operación inteligente, guiada y completamente optimizada.
                     Los trabajos son asignados por un encargado y se envían
                     automáticamente a los colectores de datos utilizados por los
                     armadores de pedidos, garantizando un flujo ordenado y sin
-                    interrupciones.
-                  </p>
-                  <p>
-                    Desde el dispositivo móvil, el operario accede a la
-                    aplicación de picking, donde el sistema le indica la ruta
-                    más eficiente para recorrer el depósito, reduciendo tiempos
-                    y mejorando la productividad. Cada paso está pensado para
-                    minimizar desplazamientos, evitar congestiones y acelerar la
-                    preparación de pedidos
-                  </p>
-                  <p>
-                    Además, el WMS selecciona automáticamente el lote más
-                    adecuado para extraer la mercadería, basándose en criterios
-                    como fecha de vencimiento, orden de ingreso del lote,
-                    rotación y otras reglas definidas por la empresa. El
-                    operario solo debe escanear, confirmar y continuar: el
-                    sistema valida todo en tiempo real, evitando errores y
-                    asegurando una trazabilidad perfecta.
-                  </p>
-                  <p>
-                    El resultado es un proceso de picking rápido, confiable y
-                    completamente optimizado, donde cada pedido se prepara de
-                    manera consistente y precisa, sin retrabajos ni pérdidas de
-                    tiempo.
-                  </p>
-                  <p>
-                    LiberaSOFT WMS convierte el picking en un flujo inteligente
-                    que impulsa la eficiencia logística y mejora la experiencia
-                    del cliente final.
-                  </p>
+                    interrupciones...
+                  </div>
+
+                  <button class="btn-saber-mas theme-btn btn-style-one">
+                    <span class="btn-title">Saber más</span>
+                  </button>
                 </div>
 
                 <!--Skills-->
@@ -1012,47 +982,28 @@
                     Abastecimiento inteligente para un flujo logístico continuo
                   </h2>
 
-                  <p>
+                  <div
+                    class="text-preview"
+                    data-fulltext="La reposición es clave para mantener la eficiencia en el picking y evitar quiebres de stock en las ubicaciones de picking. Con LiberaSOFT WMS, este proceso se vuelve totalmente digital, guiado y en tiempo real gracias al uso de colectores de datos.
+
+El sistema monitorea constantemente los niveles de inventario y detecta automáticamente las ubicaciones que están por debajo del stock mínimo definido. Cuando se requiere una reposición, el WMS genera la tarea y guía al operario paso a paso desde su dispositivo móvil.
+
+El sistema indica desde qué ubicación tomar la mercadería, seleccionando siempre el lote adecuado según fecha de vencimiento, orden de ingreso, rotación u otros criterios definidos por la empresa. Luego, dirige al operario hacia la ubicación de destino para completar la reposición de manera rápida y precisa.
+
+El resultado es un almacén siempre abastecido, un picking más fluido y una operación sin demoras ni improvisaciones. Cada movimiento queda registrado en el momento, garantizando trazabilidad total y un inventario siempre actualizado.
+
+LiberaSOFT WMS convierte la reposición en un proceso inteligente que asegura continuidad operativa y máxima eficiencia en toda la cadena logística."
+                  >
                     La reposicón es clave para mantener la eficiencia en el
                     picking y evitar quiebres de stock en las ubicaciones de
                     picking. Con LiberaSOFT WMS, este proceso se vuelve
                     totalmente digital, guiado y en tiempo real gracias al uso
-                    de colectores de datos.
-                  </p>
-                  <p>
-                    El sistema monitorea constantemente los niveles de
-                    inventario y detecta automáticamente las ubicaciones que
-                    están por debajo del stock mínimo definido. Cuando se
-                    requiere una reposición, el WMS genera la tarea y guía al
-                    operario paso a paso desde su dispositivo móvil.
-                  </p>
-                  <p>
-                    El sistema indica desde qué ubicación tomar la mercadería,
-                    seleccionando siempre el lote adecuado según fecha de
-                    vencimiento, orden de ingreso, rotación u otros criterios
-                    definidos por la empresa. Luego, dirige al operario hacia la
-                    ubicación de destino para completar la reposición de manera
-                    rápida y precisa.
-                  </p>
-                  <p>
-                    El resultado es un almacén siempre abastecido, un picking
-                    más fluido y una operación sin demoras ni improvisaciones.
-                    Cada movimiento queda registrado en el momento, garantizando
-                    trazabilidad total y un inventario siempre actualizado.
-                  </p>
-                  <p>
-                    LiberaSOFT WMS convierte la reposición en un proceso
-                    inteligente que asegura continuidad operativa y máxima
-                    eficiencia en toda la cadena logística.
-                  </p>
-                </div>
-
-                <div class="content-box">
-                  <div class="btn-box">
-                    <a href="page-about.html" class="theme-btn btn-style-one"
-                      ><span class="btn-title">Discover more</span></a
-                    >
+                    de colectores de datos...
                   </div>
+
+                  <button class="btn-saber-mas theme-btn btn-style-one">
+                    <span class="btn-title">Saber más</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1088,49 +1039,29 @@
                 <div class="testimonial-block swiper-slide">
                   <div class="row">
                     <div class="content-column col-lg-6 col-md-12">
-                      <p>
-                        El proceso de
-                        <strong>packing en LiberaSOFT WMS</strong> garantiza que
+                      <div
+                        class="text-preview"
+                        data-fulltext="El proceso de packing en LiberaSOFT WMS garantiza que cada pedido salga del depósito de forma correcta, completa y perfectamente documentada. Desde los colectores de datos, el operario accede a las tareas asignadas y realiza toda la preparación de bultos de manera 100% digital y en tiempo real.
+
+El sistema guía al usuario para validar cada artículo previamente pickeado, asegurando que las cantidades sean correctas y que los productos pertenecen al pedido indicado. Además, permite consolidar mercadería en cajas, pallets o cualquier tipo de bulto, registrando cada unidad y su trazabilidad.
+
+Durante el proceso, el WMS controla información clave como lotes, fechas de vencimiento, series y cualquier otro dato relevante, evitando errores y garantizando cumplimiento normativo. Una vez finalizado el packing, el sistema puede generar automáticamente etiquetas, documentación de despacho y códigos de tracking, listos para la etapa de expedición.
+
+El resultado es un proceso ágil, ordenado y totalmente confiable, donde cada pedido queda correctamente armado y verificado antes de salir del depósito.
+
+LiberaSOFT WMS convierte el packing en una etapa precisa, segura y altamente eficiente, mejorando la calidad del servicio y la satisfacción del cliente final."
+                      >
+                        El proceso de packing en LiberaSOFT WMS garantiza que
                         cada pedido salga del depósito de forma correcta,
                         completa y perfectamente documentada. Desde los
-                        <strong>colectores de datos</strong>, el operario accede
-                        a las tareas asignadas y realiza toda la preparación de
-                        bultos de manera
-                        <strong>100% digital y en tiempo real</strong>.
-                      </p>
-                      <p>
-                        El sistema guía al usuario para validar cada artículo
-                        previamente pickeado, asegurando que las cantidades sean
-                        correctas y que los productos pertenecen al pedido
-                        indicado. Además, permite consolidar mercadería en
-                        cajas, pallets o cualquier tipo de bulto, registrando
-                        cada unidad y su trazabilidad.
-                      </p>
-                      <p>
-                        Durante el proceso, el WMS controla información clave
-                        como
-                        <strong>lotes, fechas de vencimiento, series</strong>, y
-                        cualquier otro dato relevante, evitando errores y
-                        garantizando cumplimiento normativo. Una vez finalizado
-                        el packing, el sistema puede generar automáticamente
-                        <strong
-                          >etiquetas, documentación de despacho y códigos de
-                          tracking</strong
-                        >, listos para la etapa de expedición.
-                      </p>
-                      <p>
-                        El resultado es un proceso ágil, ordenado y totalmente
-                        confiable, donde cada pedido queda correctamente armado
-                        y verificado antes de salir del depósito.
-                      </p>
-                      <p>
-                        <strong
-                          >LiberaSOFT WMS convierte el packing en una etapa
-                          precisa, segura y altamente eficiente, mejorando la
-                          calidad del servicio y la satisfacción del cliente
-                          final.</strong
-                        >
-                      </p>
+                        colectores de datos, el operario accede a las tareas
+                        asignadas y realiza toda la preparación de bultos de
+                        manera 100% digital y en tiempo real...
+                      </div>
+
+                      <button class="btn-saber-mas theme-btn btn-style-one">
+                        <span class="btn-title">Saber más</span>
+                      </button>
                     </div>
                     <div class="image-column col-lg-6 col-md-12">
                       <figure class="image">
@@ -1169,55 +1100,29 @@
                   <h2>
                     Flujo directo de mercadería para acelerar tu operación
                   </h2>
-                  <p>
-                    Con <strong>LiberaSOFT WMS</strong>, el proceso de
-                    <strong>Cross-Docking</strong> se vuelve una operación ágil,
-                    precisa y completamente digital, diseñada para minimizar
-                    tiempos de almacenamiento y acelerar la entrega de
-                    productos. Todo se gestiona mediante
-                    <strong>colectores de datos</strong>, garantizando control
-                    en tiempo real y máxima eficiencia.
-                  </p>
-                  <p>
-                    Cuando una mercadería ingresa al depósito destinada
-                    directamente a un pedido o destino específico, el sistema
-                    identifica automáticamente que corresponde a un proceso de
-                    cross-docking. El operario recibe la tarea en su dispositivo
-                    móvil y el WMS lo guía para realizar la verificación
-                    necesaria:
-                    <strong
-                      >producto, lote, fecha de vencimiento, cantidades y
-                      destino asignado</strong
-                    >.
-                  </p>
-                  <p>
-                    En lugar de ubicar la mercadería en el stock general, el
-                    sistema indica su
-                    <strong
-                      >movimiento directo hacia el área de expedición</strong
-                    >, zona de preparación o muelle correspondiente. Esta
-                    trazabilidad inmediata elimina pasos innecesarios, reduce
-                    costos operativos y optimiza los tiempos de entrega.
-                  </p>
-                  <p>
-                    El resultado es un flujo logístico más dinámico, con menor
-                    manipulación, menos espacio requerido y mayor velocidad de
-                    respuesta para clientes, sucursales o líneas de producción.
-                  </p>
-                  <p>
-                    <strong
-                      >LiberaSOFT WMS transforma el cross-docking en una
-                      operación rápida, guiada y totalmente integrada,
-                      permitiendo que la mercadería fluya de ingreso a salida
-                      sin detenerse.</strong
-                    >
-                  </p>
-                </div>
+                  <div
+                    class="text-preview"
+                    data-fulltext="Con LiberaSOFT WMS, el proceso de Cross-Docking se vuelve una operación ágil, precisa y completamente digital, diseñada para minimizar tiempos de almacenamiento y acelerar la entrega de productos. Todo se gestiona mediante colectores de datos, garantizando control en tiempo real y máxima eficiencia.
 
-                <div class="btn-box">
-                  <a href="page-about.html" class="theme-btn btn-style-one"
-                    ><span class="btn-title">Explore now</span></a
+Cuando una mercadería ingresa al depósito destinada directamente a un pedido o destino específico, el sistema identifica automáticamente que corresponde a un proceso de cross-docking. El operario recibe la tarea en su dispositivo móvil y el WMS lo guía para realizar la verificación necesaria: producto, lote, fecha de vencimiento, cantidades y destino asignado.
+
+En lugar de ubicar la mercadería en el stock general, el sistema indica su movimiento directo hacia el área de expedición, zona de preparación o muelle correspondiente. Esta trazabilidad inmediata elimina pasos innecesarios, reduce costos operativos y optimiza los tiempos de entrega.
+
+El resultado es un flujo logístico más dinámico, con menor manipulación, menos espacio requerido y mayor velocidad de respuesta para clientes, sucursales o líneas de producción.
+
+LiberaSOFT WMS transforma el cross-docking en una operación rápida, guiada y totalmente integrada, permitiendo que la mercadería fluya de ingreso a salida sin detenerse."
                   >
+                    Con LiberaSOFT WMS, el proceso de Cross-Docking se vuelve
+                    una operación ágil, precisa y completamente digital,
+                    diseñada para minimizar tiempos de almacenamiento y acelerar
+                    la entrega de productos. Todo se gestiona mediante
+                    colectores de datos, garantizando control en tiempo real y
+                    máxima eficiencia...
+                  </div>
+
+                  <button class="btn-saber-mas theme-btn btn-style-one">
+                    <span class="btn-title">Saber más</span>
+                  </button>
                 </div>
               </div>
             </div>
