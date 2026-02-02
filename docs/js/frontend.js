@@ -65,3 +65,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target === modal) modal.classList.remove("active");
   });
 });
+
+// s***************** FUNCION PARA VALIDAR FORMULARIO DE CONTACTO (WEB Y WMS) *************************
+document.addEventListener("DOMContentLoaded", () => {
+  const checkbox = document.getElementById("checkbox");
+  const label = document.getElementById("label");
+
+  function toggleCheckbox() {
+    checkbox.classList.toggle("checked");
+  }
+
+  checkbox.addEventListener("click", toggleCheckbox);
+  label.addEventListener("click", toggleCheckbox);
+});
