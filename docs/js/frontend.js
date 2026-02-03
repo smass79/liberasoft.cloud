@@ -20,19 +20,18 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.remove("active");
   });
 
-  // cerrar haciendo click afuera
-  modal.addEventListener("click", (e) => {
+   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.remove("active");
     }
   });
 
-  // enviar form
   document.getElementById("contratarForm").addEventListener("submit", (e) => {
     e.preventDefault();
     alert("Formulario enviado (simulado)");
     modal.classList.remove("active");
   });
+  
 });
 
 // s***************** FUNCION PARA ABRIR MODAL DE TEXTO EN WMS *************************
