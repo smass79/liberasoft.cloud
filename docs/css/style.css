@@ -2430,9 +2430,24 @@ img.logo-liberasoft-2 {
     padding-right: 0;
   }
 }
-.header-style-two .header-lower .main-box .outer-box .mobile-nav-toggler {
+
+/* MODIFICADO */
+/* .header-style-two .header-lower .main-box .outer-box .mobile-nav-toggler {
   display: block;
+} */
+
+/* *********** AGREGADO *************/
+.header-style-two .header-lower .main-box .outer-box .mobile-nav-toggler {
+  display: none;
 }
+
+@media (max-width: 1023.98px) {
+  .header-style-two .header-lower .main-box .outer-box .mobile-nav-toggler {
+    display: block;
+  }
+}
+/* **************************************** */
+
 .header-style-two .header-lower .main-box .outer-box .mobile-nav-toggler:hover {
   color: var(--theme-color2);
 }
