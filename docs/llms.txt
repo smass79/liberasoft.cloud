@@ -1,0 +1,5 @@
+ERP LiberaSOFT Cloud
+Descripción: LiberaSOFT Cloud es un sistema de gestión empresarial que integra automatización e inteligencia artificial para optimizar procesos administrativos y operativos.
+Uso: Clinetes, Proveedores, Compras, Ventas, WMS, Contabilidad, Caja y Bancos
+Audiencia: Pymes y empresas medianas
+Web: https://liberasoft.cloud
