@@ -26,11 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  document.getElementById("contratarForm").addEventListener("submit", (e) => {
-    e.preventDefault();
-    alert("Formulario enviado (simulado)");
-    modal.classList.remove("active");
-  });
+
+
 });
 
 // s***************** FUNCION PARA ABRIR MODAL DE TEXTO EN WMS *************************
@@ -89,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   checkbox.addEventListener("click", toggleCheckbox);
   label.addEventListener("click", toggleCheckbox);
-
+/*
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
@@ -116,4 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Error al enviar");
       });
   });
+*/
+
 });

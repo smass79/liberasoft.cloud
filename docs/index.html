@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>LiberaSOFT ERP | Gestión empresarial con IA y automatización</title>
+    <title>LiberaSOFT Cloud | Gestión empresarial con IA y automatización</title>
     <meta
       name="description"
-      content="LiberaSOFT ERP es un sistema de gestión empresarial con automatización e inteligencia artificial para empresas de Argentina y LATAM."
+      content="LiberaSOFT Cloud es un sistema de gestión empresarial con automatización e inteligencia artificial para empresas de Argentina y LATAM."
     />
 
     <meta name="author" content="LiberaSOFT" />
-    <meta name="application-name" content="LiberaSOFT ERP" />
+    <meta name="application-name" content="LiberaSOFT Cloud" />
     <meta
       name="category"
       content="Software ERP, Gestión empresarial, Automatización"
@@ -20,44 +20,44 @@
     <meta name="robots" content="index, follow" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="LiberaSOFT ERP" />
-    <meta property="og:title" content="LiberaSOFT ERP" />
+    <meta property="og:site_name" content="LiberaSOFT Cloud" />
+    <meta property="og:title" content="LiberaSOFT Cloud" />
     <meta
       property="og:description"
       content="Sistema ERP con inteligencia artificial y automatización para la gestión empresarial."
     />
-    <meta property="og:url" content="https://www.liberasoft.com.ar" />
+    <meta property="og:url" content="https://liberasoft.cloud" />
     <meta
       property="og:image"
-      content="https://www.liberasoft.com.ar/assets/og-liberasoft.png"
+      content="https://liberasoft.cloud/assets/og-liberasoft.png"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="LiberaSOFT ERP" />
+    <meta name="twitter:title" content="LiberaSOFT Cloud" />
     <meta
       name="twitter:description"
       content="ERP inteligente para empresas modernas"
     />
     <meta
       name="twitter:image"
-      content="https://www.liberasoft.com.ar/assets/og-liberasoft.png"
+      content="https://liberasoft.cloud/assets/og-liberasoft.png"
     />
 
-    <link rel="canonical" href="https://www.liberasoft.com.ar" />
+    <link rel="canonical" href="https://liberasoft.cloud" />
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
-        "name": "LiberaSOFT ERP",
+        "name": "LiberaSOFT Cloud",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
-        "description": "LiberaSOFT ERP es un sistema de gestión empresarial con inteligencia artificial y automatización para pymes y empresas medianas.",
-        "url": "https://www.liberasoft.com.ar",
+        "description": "LiberaSOFT Cloud es un sistema ERP de gestión empresarial con inteligencia artificial y automatización para pymes y empresas medianas.",
+        "url": "https://liberasoft.cloud",
         "publisher": {
           "@type": "Organization",
           "name": "LiberaSOFT",
-          "url": "https://www.liberasoft.com.ar"
+          "url": "https://liberasoft.cloud"
         },
         "audience": {
           "@type": "BusinessAudience",
@@ -78,10 +78,10 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "¿Qué es LiberaSOFT ERP?",
+            "name": "¿Qué es LiberaSOFT Cloud?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "LiberaSOFT ERP es un sistema de gestión empresarial que integra automatización e inteligencia artificial para optimizar procesos administrativos y operativos."
+              "text": "LiberaSOFT Cloud es un sistema de gestión empresarial que integra automatización e inteligencia artificial para optimizar procesos administrativos y operativos."
             }
           },
           {
@@ -140,41 +140,63 @@
     <div class="modal-box">
       <button class="modal-close">&times;</button>
 
-      <h3>Solicitar contratación</h3>
+      <h3>Solicitar Demo</h3>
 
       <form id="contratarForm">
         <div class="form-group">
           <label>Nombre y apellido</label>
-          <input type="text" name="nombre" required />
+          <input type="text" name="nombre" id="nombre" required />
         </div>
+        <div class="form-group">
+          <label>e-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label>Teléfono</label>
 
+          <input
+            type="telefono"
+            name="telefono"
+            id="telefono"
+            required
+          />
+        </div>        
         <div class="form-group">
           <label>Nombre de la empresa</label>
-          <input type="text" name="empresa" required />
+          <input type="text" name="empresa" id="empresa" required />
         </div>
 
         <div class="form-group">
           <label>CUIT</label>
-          <input type="text" name="cuit" required />
+          <input type="text" name="cuit" id="cuit" required />
         </div>
 
         <div class="form-group">
           <label>Rubro</label>
-          <input type="text" name="rubro" />
+          <input type="text" name="rubro" id="rubro" />
         </div>
 
         <div class="form-group">
           <label>Cantidad de empleados</label>
-          <input type="number" name="empleados" min="1" />
+          <input type="number" name="empleados" id="empleados"  min="1" />
         </div>
 
         <div class="form-group">
           <label>Plan seleccionado</label>
-          <input type="text" name="plan" id="planInput" readonly />
+          <input type="text" name="plan" id="planInput" name="planInput" readonly />
         </div>
 
         <button type="submit" class="btn-enviar">Enviar solicitud</button>
       </form>
+      <div id="success-message-demo" style="display:none;">
+        <h3>¡Mensaje enviado!</h3>
+        <h3>Gracias por contactarte. Te responderemos a la brevedad.</h3>
+      </div>
     </div>
   </div>
 
@@ -216,8 +238,9 @@
           <div class="outer-box">
             <ul class="social-icon-one">
               <li>
-                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="https://www.youtube.com/@liberasofterp" target="_blank"><span class="fab fa-youtube"></span></a>
               </li>
+              <!--
               <li>
                 <a href="#"><span class="fab fa-facebook-square"></span></a>
               </li>
@@ -227,6 +250,7 @@
               <li>
                 <a href="#"><span class="fab fa-instagram"></span></a>
               </li>
+              -->
             </ul>
           </div>
         </div>
@@ -481,7 +505,7 @@
                   </h1>
                   <div class="btn-box animate-3">
                     <a
-                      href="index-4-single.html"
+                      href="https://wms.liberasoft.cloud/"
                       target="_blank"
                       class="theme-btn btn-style-one"
                       ><span class="btn-title">Ver más</span></a
@@ -649,8 +673,8 @@
           </div>
 
           <div class="bottom-text">
-            IT Technology services built specifically for your business.
-            <a href="page-services.html" class="theme-btn btn-style-one small"
+            Probar una demo por 30 dias
+            <a href="index.html#pricing" class="theme-btn btn-style-one small"
               ><span class="btn-title">Obtener una demo</span></a
             >
           </div>
@@ -668,7 +692,7 @@
             >
               <div class="inner-column">
                 <div class="sec-title">
-                  <span class="sub-title">Sobre LiberaSOFT ERP</span>
+                  <span class="sub-title">Sobre LiberaSOFT Cloud</span>
                   <h2>La Nueva Generación de Sistemas ERP</h2>
                   <div class="text">
                     Tecnología avanzada, procesos automatizados y una
@@ -1506,11 +1530,12 @@
                   </figure>
                   <div class="caption-box">
                     <div class="icon-box">
+                      <!--
                       <a
                         href="https://www.youtube.com/watch?v=Fvae8nxzVz4"
                         class="play-now lightbox-image"
                         ><i class="icon fa fa-play"></i
-                      ></a>
+                      ></a>-->
                     </div>
                     <div class="title-box">
                       <h5 class="title">
@@ -1796,7 +1821,7 @@
                     <span class="sub-title">INTEGRACIONES</span>
                     <h2>Plataforma abierta a integraciones</h2>
                     <h4>
-                      Conectá LiberaSOFT ERP con otros sistemas mediante APIs y
+                      Conectá LiberaSOFT Cloud con otros sistemas mediante APIs y
                       servicios integrados.
                     </h4>
                     <div class="text">
@@ -1974,7 +1999,7 @@
                   href="#"
                   class="theme-btn btn-style-one contratar-btn"
                   data-plan="Plan Básico"
-                  ><span class="btn-title">Quiero contratarlo</span></a
+                  ><span class="btn-title">Obtener demo</span></a
                 >
               </div>
             </div>
@@ -2004,7 +2029,7 @@
                   href="#"
                   class="theme-btn btn-style-one contratar-btn"
                   data-plan="Plan Medio"
-                  ><span class="btn-title">Quiero contratarlo</span></a
+                  ><span class="btn-title">Obtener demo</span></a
                 >
               </div>
             </div>
@@ -2028,7 +2053,7 @@
                   href="#"
                   class="theme-btn btn-style-one contratar-btn"
                   data-plan="Plan Premium"
-                  ><span class="btn-title">Quiero contratarlo</span></a
+                  ><span class="btn-title">Obtener demo</span></a
                 >
               </div>
             </div>
@@ -2079,7 +2104,7 @@
                 <!-- Contact Form -->
                 <div class="contact-form-two wow fadeInLeft">
                   <div class="title-box">
-                    <h3>Tienes preguntas??</h3>
+                    <h3>Tienes preguntas?</h3>
                     <span class="sub-title">No dudes en contactarnos.</span>
                   </div>
                   <!--Contact Form-->
@@ -2152,6 +2177,11 @@
                       </div>
                     </div>
                   </form>
+                  <div id="success-message" style="display:none;">
+                    <h3>¡Mensaje enviado!</h3>
+                    <h3>Gracias por contactarte. Te responderemos a la brevedad.</h3>
+                  </div>
+
                 </div>
                 <!--End Contact Form -->
               </div>
@@ -2295,8 +2325,9 @@
                   </div>
                   <ul class="social-icon-two">
                     <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.youtube.com/@liberasofterp" target="_blank"><i class="fab fa-youtube"></i></a>
                     </li>
+                    <!--
                     <li>
                       <a href="#"><i class="fab fa-facebook"></i></a>
                     </li>
@@ -2306,6 +2337,7 @@
                     <li>
                       <a href="#"><i class="fab fa-instagram"></i></a>
                     </li>
+                    -->
                   </ul>
                 </div>
               </div>
@@ -2419,7 +2451,7 @@
           <div class="auto-container">
             <div class="inner-container">
               <div class="copyright-text">
-                &copy; Copyright 2026 LiberaSOFT ERP - Todos los derechos
+                &copy; Copyright 2026 LiberaSOFT Cloud - Todos los derechos
                 reservados
               </div>
             </div>
@@ -2460,5 +2492,7 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/owl.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/contacto.js"></script>
+
   </body>
 </html>
