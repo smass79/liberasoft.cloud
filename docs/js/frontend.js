@@ -62,57 +62,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // s***************** FUNCION PARA VALIDAR FORMULARIO DE CONTACTO (WEB Y WMS) *************************
-// document.addEventListener("DOMContentLoaded", () => {
-//   const checkbox = document.getElementById("checkbox");
-//   const label = document.getElementById("label");
-
-//   function toggleCheckbox() {
-//     checkbox.classList.toggle("checked");
-//   }
-
-//   checkbox.addEventListener("click", toggleCheckbox);
-//   label.addEventListener("click", toggleCheckbox);
-// });
-
-// s***************** FUNCION PARA ENVIAR DATOS EN FORMULARIO DE CONTACTO (WEB Y WMS) *************************
-document.addEventListener("DOMContentLoaded", () => {
-  const checkbox = document.getElementById("checkbox");
-  const label = document.getElementById("label");
-  const form = document.getElementById("contact-form");
-
-  function toggleCheckbox() {
-    checkbox.classList.toggle("checked");
-  }
-
-  checkbox.addEventListener("click", toggleCheckbox);
-  label.addEventListener("click", toggleCheckbox);
-/*
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-
-    if (!checkbox.classList.contains("checked")) {
-      alert("Confirmá que no sos un robot.");
-      return;
-    }
-
-    const formData = new FormData(form);
-
-    fetch("https://api.dev.liberasoft.cloud/mail/SEND_contact", {
-      method: "POST",
-      body: formData,
-    })
-      .then((r) => r.json())
-      .then((data) => {
-        // console.log("Respuesta:", data);
-        alert("Mensaje enviado");
-        form.reset();
-        checkbox.classList.remove("checked");
-      })
-      .catch((e) => {
-        // console.error(e);
-        alert("Error al enviar");
-      });
-  });
-*/
-
-});
+// Captcha falso removido - ahora se usa Cloudflare Turnstile
+// (ver index.html y contacto.js)

@@ -1,5 +1,19 @@
 document.getElementById('contact-form').addEventListener('submit', function (e) {
     e.preventDefault(); // evita el reload
+
+    const turnstileResponse = document.querySelector('#contact-form [name="cf-turnstile-response"]');
+    const turnstileToken = turnstileResponse ? turnstileResponse.value : '';
+    const turnstileError = document.getElementById('turnstile-error');
+    
+    if (!turnstileToken) {
+      if (turnstileError) {
+        turnstileError.style.display = 'block';
+      }
+      return;
+    }
+    if (turnstileError) {
+      turnstileError.style.display = 'none';
+    }
   
     const headers = new Headers();
     headers.append('content-type', 'multipart/form-data');
@@ -11,6 +25,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     data.append('Asunto', "Contacto WEB LS CLOUD");
     data.append('bodyWhitutHtml', body);
     data.append('Body', body);
+    data.append('cf-turnstile-response', turnstileToken);
 
   
     fetch('https://api.dev.liberasoft.cloud/mail/SEND_contact', {
@@ -27,6 +42,8 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
       form.style.display = 'none';
       document.getElementById('success-message').style.display = 'block';
       form.reset();
+      // Reset Turnstile widget
+      if (typeof turnstile !== 'undefined') turnstile.reset();
     })
     .catch(error => {
       document.getElementById('respuesta').textContent = 'Hubo un error al enviar el mensaje ❌';
@@ -36,6 +53,20 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 
   document.getElementById('contratarForm').addEventListener('submit', function (e) {
     e.preventDefault(); // evita el reload
+
+    const turnstileResponse = document.querySelector('#contratarForm [name="cf-turnstile-response"]');
+    const turnstileToken = turnstileResponse ? turnstileResponse.value : '';
+    const turnstileError = document.getElementById('turnstile-error-demo');
+    
+    if (!turnstileToken) {
+      if (turnstileError) {
+        turnstileError.style.display = 'block';
+      }
+      return;
+    }
+    if (turnstileError) {
+      turnstileError.style.display = 'none';
+    }
   
     const headers = new Headers();
     headers.append('content-type', 'multipart/form-data');
@@ -54,6 +85,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     data.append('Asunto', "DEMO WEB LS CLOUD");
     data.append('bodyWhitutHtml', body);
     data.append('Body', body);
+    data.append('cf-turnstile-response', turnstileToken);
 
   
     fetch('https://api.dev.liberasoft.cloud/mail/SEND_contact', {
@@ -70,6 +102,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
       form.style.display = 'none';
       document.getElementById('success-message-demo').style.display = 'block';
       form.reset();
+      if (typeof turnstile !== 'undefined') turnstile.reset(document.querySelector('#turnstile-demo'));
     })
     .catch(error => {
       alert('Hubo un error al enviar el mensaje ❌');
