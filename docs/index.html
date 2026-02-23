@@ -127,6 +127,8 @@
 
     <!-- SCRIPT PARA FUNCIONES JS -->
     <script src="js/frontend.js"></script>
+
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   </head>
 
   <!-- MODAL DE PRECIOS -->
@@ -184,6 +186,10 @@
           <label>Plan seleccionado</label>
           <input type="text" name="plan" id="planInput" name="planInput" readonly />
         </div>
+
+        <!-- Cloudflare Turnstile widget para demo -->
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAACg8aVpylxQ9pMXw" data-theme="light" data-language="es" id="turnstile-demo"></div>
+        <div id="turnstile-error-demo" style="color: red; display: none; margin-top: 5px;">Por favor, verificá que no sos un robot.</div>
 
         <button type="submit" class="btn-enviar">Enviar solicitud</button>
       </form>
@@ -2140,24 +2146,9 @@
                       </div>
 
                       <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                        <div class="captcha-container">
-                          <div class="captcha-content">
-                            <div class="checkbox-wrapper">
-                              <div class="checkbox-custom" id="checkbox">
-                                <div class="checkmark"></div>
-                              </div>
-                            </div>
-                            <label class="checkbox-label" id="label"
-                              >No soy un robot</label
-                            >
-                          </div>
-
-                          <div class="captcha-footer">
-                            <span class="captcha-branding"
-                              >Protegido por LiberaSOFT</span
-                            >
-                          </div>
-                        </div>
+                        <!-- Cloudflare Turnstile widget -->
+                        <div class="cf-turnstile" data-sitekey="0x4AAAAAACg8aVpylxQ9pMXw" data-theme="light" data-language="es"></div>
+                        <div id="turnstile-error" style="color: red; display: none; margin-top: 5px;">Por favor, verificá que no sos un robot.</div>
                       </div>
 
                       <div class="form-group col-lg-12 col-md-12 col-sm-12">
