@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /*?preview=
+Disallow: /*?debug=
+Disallow: /*.json$
+
+Sitemap: https://liberasoft.cloud/sitemap.xml
