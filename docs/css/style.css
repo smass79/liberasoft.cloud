@@ -20118,3 +20118,25 @@ Sidebar
   border-radius: 2px;
   display: inline-block;
 }
+
+/***
+
+==================================================================
+    Clients Section 
+==================================================================
+
+***/
+.clients-block-one .thumb {
+  width: 220px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0 auto 15px;
+  border-radius: 30%;
+}
+.clients-block-one .thumb img {
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
